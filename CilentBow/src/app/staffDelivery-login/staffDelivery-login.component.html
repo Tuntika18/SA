@@ -1,0 +1,82 @@
+<p align="center">
+  <img src="https://www.picz.in.th/images/2018/09/06/fUmgcu.png" alt="fUmgcu.png" border="0" />
+</p>
+
+<h2 align="center">Welcome To Khong Kao Shop</h2>
+<h2 align="center">ร้านของเก่าช็อป ยินดีต้อนรับ</h2>
+
+<mat-card>
+
+  <div class="button-row" align="center">
+
+    <mat-card-actions>
+
+      <a mat-stroked-button routerLink="/home"><mat-icon>home</mat-icon>ไปหน้าหลัก</a>
+
+      <a mat-stroked-button routerLink="/">ซื้อของเก่า</a>
+
+      <a mat-stroked-button routerLink="/">ขายของเก่า</a>
+
+      <a mat-stroked-button routerLink="/">เสนอขายของเก่า</a>
+
+      <a mat-stroked-button routerLink="/delivery-list">ดูรายการจัดส่งสินค้า</a>
+
+      <a mat-stroked-button routerLink="/staffDeliveryLogin">รายการจัดส่ง</a>
+      
+       <a mat-stroked-button routerLink="/home">ติดต่อร้าน</a>
+
+      <a mat-stroked-button routerLink="/stafflogin">จัดการคลังสินค้า</a>
+
+
+      <a mat-stroked-button routerLink="/">ออกจากระบบ</a>
+
+    </mat-card-actions>
+
+
+
+  </div>
+
+  <p align = 'center'> Staff Login Work ! </p>
+
+  &nbsp;
+
+<mat-card class="staffloginDelivery-card">
+  <h1 align="center">Staff Delivery Login</h1>
+
+<form class="example-form">
+<mat-card>
+  <mat-form-field class="example-full-width">
+   <input matInput placeholder="username "  [(ngModel)]="credentials.username"
+      required name="username" #username >
+  </mat-form-field>
+
+   <mat-form-field class="example-full-width">
+      <input matInput placeholder="password " type = "password"  [(ngModel)]="credentials.password"
+      required name="password" #password >
+  </mat-form-field>
+</mat-card>
+  
+</form>
+
+<div class="example-container">
+
+
+</div>
+
+
+  <mat-card-actions>
+    <div class="button-address" align="center">
+      <button mat-button color="primary" (click)="Autention()">เข้าสู่ระบบ</button>
+ 
+      &nbsp;
+    </div>
+  </mat-card-actions>
+</mat-card>
+
+</mat-card>
+
+
+
+
+&nbsp;
+

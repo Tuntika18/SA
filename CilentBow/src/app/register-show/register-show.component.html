@@ -1,0 +1,35 @@
+<mat-card class="register-all">
+  <h2 align="center">
+    <img src="https://www.picz.in.th/images/2018/10/25/kMFR9n.jpg" width="200" height="200">
+  </h2>
+</mat-card>
+
+
+
+
+&nbsp;
+<mat-card class="payment-card">
+  <p>name:&nbsp;&nbsp;&nbsp; {{this.data.initial}}</p>
+  <p>name:&nbsp;&nbsp;&nbsp; {{this.data.firstname}}</p>
+  <p>gender:&nbsp;&nbsp;&nbsp; {{this.data.gender}}</p>
+  <p>address:&nbsp;&nbsp;&nbsp; {{this.data.address}}</p>
+  <p>province:&nbsp;&nbsp;&nbsp; {{this.data.province}}</p>
+  <p>email:&nbsp;&nbsp;&nbsp; {{this.data.email}}</p>
+  <p>phonenumber:&nbsp;&nbsp;&nbsp; {{this.data.phonenumber}}</p>
+  <p>username:&nbsp;&nbsp;&nbsp; {{this.data.username}}</p>
+  <p>password:&nbsp;&nbsp;&nbsp; {{this.data.password}}</p>
+
+  <a mat-stroked-button (click) = "save()" routerLink="/">Confirm Sign UP</a>
+
+  <a mat-stroked-button routerLink="/register">back to register</a>
+
+
+
+
+
+
+
+
+
+
+</mat-card>

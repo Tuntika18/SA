@@ -1,0 +1,103 @@
+<mat-card class="register-all">
+  <h2 align="center">
+    <img src="https://www.picz.in.th/images/2018/10/25/kMFR9n.jpg" width="200" height="200">
+
+  </h2>
+
+  <form class="example-form">
+
+    <table class="example-first-last" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field>
+                    <mat-select placeholder="Initial" [(ngModel)]="data.initial" [(ngModel)]="customers.initialSelect" name="initial" #initial>
+                      <mat-option *ngFor="let initial of initials" [value]="initial.initialName">
+                        {{initial.initialName}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+          </tr>
+
+      <tr>
+        <td>
+          <mat-form-field class="example-first-last ">
+            <input matInput placeholder="Name" [(ngModel)]="data.firstname"required name="Firstname" #Firstname>
+          </mat-form-field>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+            <mat-form-field>
+                <mat-select placeholder="Gender" [(ngModel)]="data.gender" [(ngModel)]="customers.genderSelect" name="gender" #gender>
+                  <mat-option *ngFor="let gender of genders" [value]="gender.sex">
+                    {{gender.sex}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-first-last ">
+            <input matInput placeholder="Address" [(ngModel)]="data.address" required name="Address" #Address>
+          </mat-form-field>
+        </td>
+        <td>
+            <mat-form-field>
+                <mat-select placeholder="Province" [(ngModel)]="data.province" [(ngModel)]="customers.provinceSelect" name="province">
+                  <mat-option *ngFor="let province of provinces" [value]="province.provinceName">
+                      {{province.provinceName}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </td>
+      </tr>
+
+  
+
+
+      <tr>
+        <td>
+          <mat-form-field class="example-first-last ">
+            <input matInput placeholder="Email" [(ngModel)]="data.email" required name="Email" #Email>
+          </mat-form-field>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <mat-form-field class="example-first-last ">
+            <input matInput placeholder="Phonenumber" [(ngModel)]="data.phonenumber" required name="Phonenumber"
+              #Phonenumber>
+          </mat-form-field>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <mat-form-field class="example-first-last ">
+            <input matInput placeholder="Username" [(ngModel)]="data.username" required name="Username" #Username>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-first-last ">
+            <input matInput placeholder="Password" type="password" [(ngModel)]="data.password" required name="Password"
+              #Password>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <mat-card-actions align="end">
+
+    <button mat-raised-button color="warn" (click)="SubmitdData()">Sign Up</button>
+    <a mat-stroked-button routerLink="">Cancle</a>
+
+  </mat-card-actions>
+
+</mat-card>
